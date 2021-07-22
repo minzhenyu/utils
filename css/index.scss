@@ -1,0 +1,79 @@
+
+// 初始化scss
+html {
+    font-size: 100px;
+}
+
+body,
+div, article, section, header, footer, nav, aside, p,
+h1, h2, h3, h4, h5, h6,
+form, input, button, label,
+a, span, em,
+ul, li, dl, dt, dd,
+table, thead, tbody, tfoot, tr, th, td {
+    font-size: .14rem;
+    margin: 0;
+    padding: 0;
+}
+
+ul, li {
+    list-style-type: none
+}
+
+a {
+    text-decoration: none;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+input {
+    border: 1px solid #eee;
+    padding: 0;
+    margin: 0;
+    line-height: 1.5em;
+    height: 1.5em;
+    display: block;
+}
+
+$master-color: rgba(4, 19, 36, 1); // 主色调
+$sub-color: rgba(4, 19, 36, .8); // 主色调
+
+$primary-color: #1890ff; // 全局主色
+$link-color: #1890ff; // 链接色
+$success-color: #52c41a; // 成功色
+$warning-color: #faad14; // 警告色
+$error-color: #f5222d; // 错误色
+
+$heading-color: rgba(0, 0, 0, 0.85); // 标题色
+$text-color: rgba(0, 0, 0, 0.65); // 主文本色
+$text-color-secondary: rgba(0, 0, 0, .45); // 次文本色
+$disabled-color: rgba(0, 0, 0, .25); // 失效色
+$white-color: #fff; // 白色
+$white-opacity-color: rgba(255, 255, 255, .6); // 白色透明
+$bg-color:#F0EFF5;    // 背景色
+
+$border-radius-base: 4px; // 组件/浮层圆角
+$border-color-base: #d9d9d9; // 边框色
+$box-shadow-base: 0 2px 8px rgba(0, 0, 0, 0.15); // 浮层阴影
+
+$gutter-min: .08rem;
+$gutter: .24rem;
+$gutter-max: .48rem;
+
+$content-width: calc(100% - .48rem * 2);
+
+$font-size-sm: .12rem;
+$font-size-base: .14rem; // 主字号
+$font-size-md: .16rem;
+$font-size-lg: .18rem;
+$font-size-xl: .24rem;
+
+
+@mixin flex($align-items:center, $justify-content:center){
+    display: flex;
+    align-items: $align-items;
+    justify-content: $justify-content;
+}

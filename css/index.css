@@ -1,0 +1,18 @@
+
+/* 初始化css */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,
+body {
+	background-color: #fff;
+	color: #555;
+	font-family: "Lato", "Arial", sans-serif; /* replace Lato with your font */
+	font-weight: 400;
+	font-size: 62.5%;
+	line-height: 1.7;
+	text-rendering: optimizeLegibility;
+	overflow-x: hidden;
+}
