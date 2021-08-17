@@ -1,4 +1,5 @@
 //缩写 vue3  发布模式  代理模式
+//参考地址原理: https://mp.weixin.qq.com/s/0oUkdqj9jE9IEQic8QrfyA
 
 let activeEffect
 
