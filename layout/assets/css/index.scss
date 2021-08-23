@@ -1,0 +1,9 @@
+$headerHeight:80px;
+$footerHeihgt:300px;
+$leftBarWidth:200px;
+$rightBarWidth:300px;
+$primaryColor:#f00;
+  @mixin sideBarHeight(){
+      height:  calc( 100% - $headerHeight )
+  }
+    
