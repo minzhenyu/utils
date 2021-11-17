@@ -55,6 +55,7 @@ const reactiveHandlers = {
 }
 
 const targetToHashMap = new WeakMap()
+// WeakMap 的 key 只能是 Object 类型。 原始数据类型 是不能作为 key 的（比如 Symbol）。值可以是任意
 
 function getDep(target, key) {
   let depMap = targetToHashMap.get(target)
@@ -75,3 +76,7 @@ function getDep(target, key) {
 function reactive(obj) {
   return new Proxy(obj, reactiveHandlers)
 }
+
+// 使用
+const obj = reactive({ count: 0 })
+obj.count++
