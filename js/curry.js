@@ -23,11 +23,13 @@ const _curry=function(fn, len, ...args){
     }
 }
 
+// 使用
 const _fn=curry(function(a,b,c){
     console.log(a,b,c)
 })
 
 _fn(1)(2)(3)
-// _fn([1,2])([3])([4])([5])
+_fn(1,2)(3)
+_fn(1,2,3)
 
 // lodash 还有占位符用法 不做具体实现
