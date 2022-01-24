@@ -1,0 +1,11 @@
+{
+  "name": "utils",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/minzhenyu/utils.git",
+  "author": "aaron min <278329474@qq.com>",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^4.5.4"
+  }
+}
