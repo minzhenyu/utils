@@ -1,10 +1,10 @@
 /*
  * @Author: zy.min
  * @Date: 2022-01-25 14:33:26
- * @LastEditTime: 2022-01-25 14:34:49
+ * @LastEditTime: 2022-01-25 14:42:47
  * @LastEditors: zy.min
  */
-// 字段名称转驼峰
+// 字段名称转小驼峰
 function toCase(str) {
     const to = str.replace(/(-[a-z])/g, function (v) {
         return v.replace('-', '').toLocaleUpperCase();
