@@ -20,8 +20,19 @@
 //被观察者 存贮 观察者
 class Observerd {
   constructor() {
+    //
+    this.state = 0;
     // 我要看看到底有多少人在观察俺
     this.observerList = [];
+  }
+  // 获取状态
+  getState() {
+    return this.state;
+  }
+  // 设置状态
+  setState(state) {
+    this.state = state;
+    this.notify();
   }
   // 新增观察者
   addObserver(observer) {
@@ -72,3 +83,25 @@ xiaoBaiShu.notify(); //主动触发更新
 // 删除后触发
 xiaoBaiShu.delObserver("test2");
 xiaoBaiShu.notify(); //主动触发更新
+
+// Observerd 可以自动添加到指定被观察者
+class AutoObserver {
+  constructor(name, observerd, doSome) {
+    this.name = name;
+    this.doSome = doSome;
+    this.observerd = observerd;
+    this.observerd.addObserver(this);
+  }
+  update() {
+    this.doSome(this.name, this.observerd.getState());
+    console.log(`${this.name} 观察者更新了state：${this.observerd.getState()}`);
+  }
+}
+const autFn = function (name, state) {
+  console.log(`autFn this:${this.name}`);
+  console.log(`autFn:${name} 观察者更新了state：${state}`);
+};
+const autoObwerved = new Observerd();
+const auto = new AutoObserver("auto", autoObwerved, autFn);
+
+autoObwerved.setState(1);
