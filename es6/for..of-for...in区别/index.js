@@ -12,6 +12,14 @@ const obj = {
   c: 3,
 };
 
-for (key in obj) {
+for (const key in obj) {
   console.log(`对象: key: ${key},值:${obj[key]}`);
+}
+
+for (const index in arr) {
+  console.log(`下标: index: ${index},值:${obj[index]}`);
+}
+
+for (const value of arr) {
+  console.log(`值:${value}`);
 }
