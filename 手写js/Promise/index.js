@@ -9,14 +9,14 @@ export class MyPromise {
       if (this.status === "pending") {
         this.status = "fulfilled";
         this.value = value;
-        this.onFulfilledCallbacks.forEach((fn) => fn()); // 调用成功的回调函数
+        this.onFulfilledCallbacks.forEach((fn) => fn(value)); // 调用成功的回调函数
       }
     };
     let reject = (reason) => {
       if (this.status === "pending") {
         this.status = "rejected";
         this.reason = reason;
-        this.onRejectedCallbacks.forEach((fn) => fn()); // 调用失败的回调函数
+        this.onRejectedCallbacks.forEach((fn) => fn(reason)); // 调用失败的回调函数
       }
     };
     try {
