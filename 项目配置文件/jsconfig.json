@@ -1,0 +1,15 @@
+{
+	"compilerOptions": {
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"allowSyntheticDefaultImports": true,
+		"baseUrl": "./",
+		"paths": {
+			// 配置别名
+			"@/*": ["./src/*"],
+			"@app/*": ["./app/*"],
+			"@main/*": ["./main/*"]
+		}
+	},
+	"exclude": ["node_modules", "lib", "dist"]
+}

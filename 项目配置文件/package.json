@@ -1,0 +1,65 @@
+{
+	"name": "",
+	"version": "",
+	"private": false,
+	"license": "ISC",
+	"main": "",
+	"files": [
+		"lib"
+	],
+	"scripts": {
+		"prepare": "husky",
+		"lint-staged": "lint-staged",
+		"commit": "git-cz && git commit",
+		"commit-all": "git pull && git add . && git-cz && git push"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"@commitlint/cli": "17.6.7",
+		"@commitlint/config-conventional": "^17.6.7",
+		"babel-eslint": "^10.0.3",
+		"commitizen": "^4.3.0",
+		"cross-env": "^7.0.3",
+		"cz-git": "^1.7.0",
+		"eslint": "^6.7.2",
+		"eslint-config-prettier": "^8.8.0",
+		"eslint-plugin-prettier": "^4.0.0",
+		"eslint-plugin-vue": "^6.2.2",
+		"husky": "^9.1.4",
+		"lint-staged": "^15.2.7",
+		"path": "^0.12.7",
+		"prettier": "^3.3.3",
+		"sass": "^1.69.5",
+		"sass-loader": "^10.1.0",
+		"stylelint": "^15.10.2",
+		"stylelint-config-html": "^1.1.0",
+		"stylelint-config-prettier": "^9.0.5",
+		"stylelint-config-recess-order": "^4.3.0",
+		"stylelint-config-recommended-scss": "^12.0.0",
+		"stylelint-config-recommended-vue": "^1.5.0",
+		"stylelint-config-standard": "^34.0.0",
+		"stylelint-config-standard-scss": "^10.0.0",
+		"terser-webpack-plugin": "^4.2.3"
+	},
+	"browserslist": [
+		"> 1%",
+		"last 2 versions",
+		"not dead"
+	],
+	"config": {
+		"commitizen": {
+			"path": "node_modules/cz-git"
+		}
+	},
+	"description": "",
+	"directories": {
+		"lib": "lib"
+	},
+	"repository": {
+		"type": "git",
+		"url": ""
+	},
+	"keywords":
+],
+"author": ""
+}
