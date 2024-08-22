@@ -8,6 +8,10 @@
 		"lib"
 	],
 	"scripts": {
+		"serve": "vue-cli-service serve --port 8082",
+		"build": "NODE_ENV= vue-cli-service build",
+		"lib-dev": "export NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service build --target lib --name xxx --dest lib src/index.js",
+		"lib": "vue-cli-service build --target lib --name xxx --dest lib src/index.js",
 		"prepare": "husky",
 		"lint-staged": "lint-staged",
 		"commit": "git-cz && git commit",
